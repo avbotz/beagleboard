@@ -1,0 +1,195 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		8BC5554911E043E10073120D /* BeagleBoard Build */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8BC5554F11E044030073120D /* Build configuration list for PBXAggregateTarget "BeagleBoard Build" */;
+			buildPhases = (
+				8BC5554811E043E10073120D /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "BeagleBoard Build";
+			productName = "BeagleBoard Build";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXFileReference section */
+		8B3A615111EA91D000555F1C /* vision_path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vision_path.cpp; sourceTree = "<group>"; };
+		8B3A615211EA91D100555F1C /* vision_path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision_path.h; sourceTree = "<group>"; };
+		8B3A619711EA9DD000555F1C /* testing.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testing.conf; sourceTree = "<group>"; };
+		8B6A973911E6A3E600F50985 /* vision_buoy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision_buoy.h; sourceTree = "<group>"; };
+		8B6A973A11E6A3E600F50985 /* vision_buoy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vision_buoy.cpp; sourceTree = "<group>"; };
+		8B8AB0D311E15827003B5B5C /* avi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = avi.h; sourceTree = "<group>"; };
+		8B8AB0D611E15B73003B5B5C /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		8B8AB0D711E15B73003B5B5C /* state.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = state.cpp; sourceTree = "<group>"; };
+		8BCFBEAD11F17904009B8B6E /* competition.conf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = competition.conf; sourceTree = "<group>"; };
+		8BF2FCAE11E0444B005524DF /* avi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = avi.cpp; sourceTree = "<group>"; };
+		8BF2FCAF11E0444B005524DF /* net_listener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net_listener.cpp; sourceTree = "<group>"; };
+		8BF2FCB011E0444B005524DF /* net_listener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_listener.h; sourceTree = "<group>"; };
+		8BF2FCB111E0444B005524DF /* net_sender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = net_sender.cpp; sourceTree = "<group>"; };
+		8BF2FCB211E0444B005524DF /* net_sender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_sender.h; sourceTree = "<group>"; };
+		8BF2FCB311E0444B005524DF /* serial_com.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = serial_com.cpp; sourceTree = "<group>"; };
+		8BF2FCB411E0444B005524DF /* serial_com.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serial_com.h; sourceTree = "<group>"; };
+		8BF2FCB511E0444B005524DF /* vision.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vision.cpp; sourceTree = "<group>"; };
+		8BF2FCB611E0444B005524DF /* vision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision.h; sourceTree = "<group>"; };
+		8BF2FCB711E0444B005524DF /* vision_proc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vision_proc.cpp; sourceTree = "<group>"; };
+		8BF2FCB811E0444B005524DF /* vision_proc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vision_proc.h; sourceTree = "<group>"; };
+		8BF2FCEE11E1137A005524DF /* remote_build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = remote_build.sh; sourceTree = "<group>"; };
+		8BF2FCF011E113EE005524DF /* excludes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = excludes; sourceTree = "<group>"; };
+		8BF2FCF111E11424005524DF /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		8BE1E72411DFEA15001C8085 = {
+			isa = PBXGroup;
+			children = (
+				8B3A619711EA9DD000555F1C /* testing.conf */,
+				8BCFBEAD11F17904009B8B6E /* competition.conf */,
+				8BF2FCF111E11424005524DF /* Makefile */,
+				8BF2FCEF11E11389005524DF /* bb_build */,
+				8BF2FCAD11E0444B005524DF /* src */,
+			);
+			sourceTree = "<group>";
+		};
+		8BF2FCAD11E0444B005524DF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				8BF2FCAE11E0444B005524DF /* avi.cpp */,
+				8B8AB0D311E15827003B5B5C /* avi.h */,
+				8BF2FCAF11E0444B005524DF /* net_listener.cpp */,
+				8BF2FCB011E0444B005524DF /* net_listener.h */,
+				8BF2FCB111E0444B005524DF /* net_sender.cpp */,
+				8BF2FCB211E0444B005524DF /* net_sender.h */,
+				8BF2FCB311E0444B005524DF /* serial_com.cpp */,
+				8BF2FCB411E0444B005524DF /* serial_com.h */,
+				8B8AB0D611E15B73003B5B5C /* state.h */,
+				8B8AB0D711E15B73003B5B5C /* state.cpp */,
+				8BF2FCB511E0444B005524DF /* vision.cpp */,
+				8BF2FCB611E0444B005524DF /* vision.h */,
+				8B3A615111EA91D000555F1C /* vision_path.cpp */,
+				8B3A615211EA91D100555F1C /* vision_path.h */,
+				8BF2FCB711E0444B005524DF /* vision_proc.cpp */,
+				8BF2FCB811E0444B005524DF /* vision_proc.h */,
+				8B6A973A11E6A3E600F50985 /* vision_buoy.cpp */,
+				8B6A973911E6A3E600F50985 /* vision_buoy.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		8BF2FCEF11E11389005524DF /* bb_build */ = {
+			isa = PBXGroup;
+			children = (
+				8BF2FCEE11E1137A005524DF /* remote_build.sh */,
+				8BF2FCF011E113EE005524DF /* excludes */,
+			);
+			path = bb_build;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		8BE1E72611DFEA15001C8085 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 8BE1E72911DFEA15001C8085 /* Build configuration list for PBXProject "AVI" */;
+			compatibilityVersion = "Xcode 2.4";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 8BE1E72411DFEA15001C8085;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8BC5554911E043E10073120D /* BeagleBoard Build */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BC5554811E043E10073120D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\n./bb_build/remote_build.sh\n\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8BC5554A11E043E20073120D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "BeagleBoard Build";
+			};
+			name = Debug;
+		};
+		8BC5554B11E043E20073120D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "BeagleBoard Build";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		8BE1E72711DFEA15001C8085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		8BE1E72811DFEA15001C8085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8BC5554F11E044030073120D /* Build configuration list for PBXAggregateTarget "BeagleBoard Build" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BC5554A11E043E20073120D /* Debug */,
+				8BC5554B11E043E20073120D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8BE1E72911DFEA15001C8085 /* Build configuration list for PBXProject "AVI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8BE1E72711DFEA15001C8085 /* Debug */,
+				8BE1E72811DFEA15001C8085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8BE1E72611DFEA15001C8085 /* Project object */;
+}

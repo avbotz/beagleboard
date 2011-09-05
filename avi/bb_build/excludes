@@ -1,0 +1,6 @@
+build/*
+bb_build
+rsync_code.sh
+AVI.xcodeproj
+.svn
+.git
