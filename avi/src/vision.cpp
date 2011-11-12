@@ -1,19 +1,21 @@
-/*Reasoning behind this class:
- *	For some reason, OpenCV can not handle capturing images from our cameras.
- *	It starts reading the first frame in the middle (still does that, don't know why),
- *	converts the frames into jpeg (I have no idea why, really doesn't work if
- *	you start the first frame in the middle), converts the color space from YUV to RGB
- *	COMPLETELY wrong (absolutely no clue why), and is generally horribly slow at that.
- *	This class uses Video 4 Linux 2 directly to grab the YUV frames, and
- *	gives it to a vision_proc class, which can convert, save, do whatever.
- *	Most of this is sample code, which I just wrapped in a thread and added methods to
- *	start, stop, and change cameras.  As a result, its mostly impossible to read.
- *	It works most of the time and it does it pretty fast, so no complaining allowed.
- *	I also put in some unused, untested, and likely unworking FPS measuring stuff.
- *	Enjoy.
- *
- *	PS the original non-chopped down sample code is in the V4L2 API
- *	 http://v4l2spec.bytesex.org/spec/capture-example.html
+/* 
+ * Reasoning behind this class:
+ * 
+ * For some reason, OpenCV can not handle capturing images from our cameras. It 
+ * starts reading the first frame in the middle (still does that, don't know 
+ * why), converts the frames into jpeg (I have no idea why, really doesn't work 
+ * if you start the first frame in the middle), converts the color space from 
+ * YUV to RGB COMPLETELY wrong (absolutely no clue why), and is generally 
+ * horribly slow at that.This class uses Video 4 Linux 2 directly to grab the 
+ * YUV frames, and gives it to a vision_proc class, which can convert, save, do 
+ * whatever. Most of this is sample code, which I just wrapped in a thread and 
+ * added methods to start, stop, and change cameras.  As a result, its mostly 
+ * impossible to read. It works most of the time and it does it pretty fast, so 
+ * no complaining allowed. I also put in some unused, untested, and likely 
+ * unworking FPS measuring stuff. Enjoy. 
+ * 
+ * P.S. The original, non-chopped down sample code is in the V4L2 API. 
+ * http://v4l2spec.bytesex.org/spec/capture-example.html
  */
 
 #include <sys/time.h>
